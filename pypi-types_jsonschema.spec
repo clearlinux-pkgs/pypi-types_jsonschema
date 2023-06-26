@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-types_jsonschema
-Version  : 4.17.0.7
-Release  : 1
-URL      : https://files.pythonhosted.org/packages/8e/6f/0caa1dc6baea1880401a75ac84f371e2fa1207a977d71a39ddc696b2688d/types-jsonschema-4.17.0.7.tar.gz
-Source0  : https://files.pythonhosted.org/packages/8e/6f/0caa1dc6baea1880401a75ac84f371e2fa1207a977d71a39ddc696b2688d/types-jsonschema-4.17.0.7.tar.gz
+Version  : 4.17.0.8
+Release  : 2
+URL      : https://files.pythonhosted.org/packages/c4/3c/162d88783e1b6ca09c2a612c8da0d227690b97add197abda7ff0011aef98/types-jsonschema-4.17.0.8.tar.gz
+Source0  : https://files.pythonhosted.org/packages/c4/3c/162d88783e1b6ca09c2a612c8da0d227690b97add197abda7ff0011aef98/types-jsonschema-4.17.0.8.tar.gz
 Summary  : Typing stubs for jsonschema
 Group    : Development/Tools
 License  : Apache-2.0
@@ -41,10 +41,10 @@ python3 components for the pypi-types_jsonschema package.
 
 
 %prep
-%setup -q -n types-jsonschema-4.17.0.7
-cd %{_builddir}/types-jsonschema-4.17.0.7
+%setup -q -n types-jsonschema-4.17.0.8
+cd %{_builddir}/types-jsonschema-4.17.0.8
 pushd ..
-cp -a types-jsonschema-4.17.0.7 buildavx2
+cp -a types-jsonschema-4.17.0.8 buildavx2
 popd
 
 %build
@@ -52,7 +52,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683223925
+export SOURCE_DATE_EPOCH=1687798002
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
