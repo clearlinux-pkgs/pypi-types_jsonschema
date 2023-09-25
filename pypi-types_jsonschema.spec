@@ -4,16 +4,17 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-types_jsonschema
-Version  : 4.17.0.10
-Release  : 4
-URL      : https://files.pythonhosted.org/packages/81/5e/6a1864eacbb937f530d5586224737b1542892c39ac0c8d5c7dccc6b68f7e/types-jsonschema-4.17.0.10.tar.gz
-Source0  : https://files.pythonhosted.org/packages/81/5e/6a1864eacbb937f530d5586224737b1542892c39ac0c8d5c7dccc6b68f7e/types-jsonschema-4.17.0.10.tar.gz
+Version  : 4.19.0.0
+Release  : 5
+URL      : https://files.pythonhosted.org/packages/35/dd/9fa0d515e5da62aed5b0f7b981a91e6a650850d076e87a8e5125e49e7865/types-jsonschema-4.19.0.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/35/dd/9fa0d515e5da62aed5b0f7b981a91e6a650850d076e87a8e5125e49e7865/types-jsonschema-4.19.0.0.tar.gz
 Summary  : Typing stubs for jsonschema
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: pypi-types_jsonschema-python = %{version}-%{release}
 Requires: pypi-types_jsonschema-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+BuildRequires : pypi(referencing)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -35,16 +36,17 @@ Summary: python3 components for the pypi-types_jsonschema package.
 Group: Default
 Requires: python3-core
 Provides: pypi(types_jsonschema)
+Requires: pypi(referencing)
 
 %description python3
 python3 components for the pypi-types_jsonschema package.
 
 
 %prep
-%setup -q -n types-jsonschema-4.17.0.10
-cd %{_builddir}/types-jsonschema-4.17.0.10
+%setup -q -n types-jsonschema-4.19.0.0
+cd %{_builddir}/types-jsonschema-4.19.0.0
 pushd ..
-cp -a types-jsonschema-4.17.0.10 buildavx2
+cp -a types-jsonschema-4.19.0.0 buildavx2
 popd
 
 %build
@@ -52,7 +54,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1689879145
+export SOURCE_DATE_EPOCH=1695655455
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
