@@ -7,7 +7,7 @@
 #
 Name     : pypi-types_jsonschema
 Version  : 4.23.0.20241208
-Release  : 21
+Release  : 22
 URL      : https://files.pythonhosted.org/packages/ad/e6/9e5cd771687086844caa43dbb211ec0d1cfa899d17c110f3220efcd46e83/types_jsonschema-4.23.0.20241208.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ad/e6/9e5cd771687086844caa43dbb211ec0d1cfa899d17c110f3220efcd46e83/types_jsonschema-4.23.0.20241208.tar.gz
 Summary  : Typing stubs for jsonschema
