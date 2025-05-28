@@ -6,10 +6,10 @@
 # autospec commit: 99a7985
 #
 Name     : pypi-types_jsonschema
-Version  : 4.23.0.20250516
-Release  : 23
-URL      : https://files.pythonhosted.org/packages/a0/ec/27ea5bffdb306bf261f6677a98b6993d93893b2c2e30f7ecc1d2c99d32e7/types_jsonschema-4.23.0.20250516.tar.gz
-Source0  : https://files.pythonhosted.org/packages/a0/ec/27ea5bffdb306bf261f6677a98b6993d93893b2c2e30f7ecc1d2c99d32e7/types_jsonschema-4.23.0.20250516.tar.gz
+Version  : 4.24.0.20250528
+Release  : 24
+URL      : https://files.pythonhosted.org/packages/ff/a0/a78769197ca769500565cd2708e12ed5fbc9452da1853effd7d8ad292f0a/types_jsonschema-4.24.0.20250528.tar.gz
+Source0  : https://files.pythonhosted.org/packages/ff/a0/a78769197ca769500565cd2708e12ed5fbc9452da1853effd7d8ad292f0a/types_jsonschema-4.24.0.20250528.tar.gz
 Summary  : Typing stubs for jsonschema
 Group    : Development/Tools
 License  : Apache-2.0
@@ -33,7 +33,7 @@ It can be used by type-checking tools like
 [Pyre](https://pyre-check.org/),
 PyCharm, etc. to check code that uses `jsonschema`. This version of
 `types-jsonschema` aims to provide accurate annotations for
-`jsonschema==4.23.*`.
+`jsonschema==4.24.*`.
 
 %package license
 Summary: license components for the pypi-types_jsonschema package.
@@ -64,10 +64,10 @@ python3 components for the pypi-types_jsonschema package.
 
 
 %prep
-%setup -q -n types_jsonschema-4.23.0.20250516
-cd %{_builddir}/types_jsonschema-4.23.0.20250516
+%setup -q -n types_jsonschema-4.24.0.20250528
+cd %{_builddir}/types_jsonschema-4.24.0.20250528
 pushd ..
-cp -a types_jsonschema-4.23.0.20250516 buildavx2
+cp -a types_jsonschema-4.24.0.20250528 buildavx2
 popd
 
 %build
@@ -75,7 +75,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1747405601
+export SOURCE_DATE_EPOCH=1748440590
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
